@@ -1,0 +1,28 @@
+.work-item {
+	padding: 1em 0;
+
+	&-image {
+		width: 70%;
+		margin: 0 auto;
+		height: 20em;
+		overflow: hidden;
+		box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&-overlay {
+		text-align: center;
+		margin: 2em 0;
+		.overlay-title {
+
+		}
+	}
+
+	.overlay-button {
+		margin-top: 2em;
+	}
+}

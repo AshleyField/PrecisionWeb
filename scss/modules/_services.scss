@@ -1,0 +1,40 @@
+.service-item {
+	padding: 1em 0;
+
+	&-image {
+		width: 60%;
+		margin: 1em auto;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	&-heading {
+		h2 {
+			text-align: center;
+			font-weight: 700;
+
+			&:after {
+				border-bottom: 1px rgba(0,0,0,0.5) solid;
+				width: 5em;
+				display: block;
+				content: "";
+				margin: .4em auto;
+
+			}
+		}
+	}
+
+	&-content {
+		p {
+			font-weight: 300;
+			text-align: center;
+			font-size: 1.25em;
+		}
+	}
+}

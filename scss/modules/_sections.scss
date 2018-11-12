@@ -1,0 +1,23 @@
+section {
+	min-height: 95vh;
+	padding: 2em 1em; 
+}
+
+.section-heading {
+	text-align: center;
+
+	h1 {
+		font-weight: 300;
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+		font-size: 2em;
+	}
+}
+
+#services {
+	background-color: rgba(0,0,0,0.03);
+}
+
+#clients {
+	background-color: rgba(0,0,0,0.03);
+}

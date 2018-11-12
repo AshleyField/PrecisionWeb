@@ -1,0 +1,24 @@
+// Base
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-button {
+	width: 13em;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px rgba(0,0,0,0.2) solid;
+	margin: 0 auto;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+		display: block;
+	}
+
+}

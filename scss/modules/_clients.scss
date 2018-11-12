@@ -1,0 +1,15 @@
+.client-logo {
+	width: 50%;
+	margin: 3em auto;
+
+	img {
+		width: 100%;
+		display: block;
+		filter: grayscale(100%);
+		transition: .8s ease all;
+
+		&:hover {
+			filter: none;
+		}
+	}
+}

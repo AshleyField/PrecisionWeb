@@ -1,0 +1,31 @@
+.banner {
+	height: 70vh;
+	background-image: url('../../assets/images/banner-image.jpg');
+	background-position: left-top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+
+	.banner-inner {
+		flex: 1 0 90%;
+		align-self: center;
+
+		h1 {
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 1em;
+		}
+
+		.banner-logo {
+			width: 80%;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}

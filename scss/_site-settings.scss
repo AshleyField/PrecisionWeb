@@ -1,0 +1,16 @@
+/*
+Theme Name: Barfoot Custom Theme
+Author: Precision Web
+Author URI: http://precisionweb.co.nz/
+Version: 1.0.0
+*/
+
+$precision-green: #44AB34;
+
+@mixin headingFont {
+	font-family: 'Montserrat', sans-serif;
+} 
+
+@mixin textShadow {
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
