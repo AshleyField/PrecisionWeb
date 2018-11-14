@@ -1,12 +1,21 @@
+.col-3-container {
+
+	align-items: stretch;
+
+}
+
 .work-item {
-	padding: 1em 0;
+	display: flex;
+	flex-direction: column;
+	height:100%;
 
 	&-image {
-		width: 70%;
+		width: 100%;
 		margin: 0 auto;
 		height: 20em;
 		overflow: hidden;
 		box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+		flex: 0 0 auto;
 
 		img {
 			display: block;
@@ -17,12 +26,115 @@
 	&-overlay {
 		text-align: center;
 		margin: 2em 0;
-		.overlay-title {
+		display:flex;
+		flex-direction: column;
+		flex: 1 0 auto;
+
+
+		.overlay-title, .overlay-button {
+			flex: 0 0 auto;
+
+		}
+		.overlay-blurb {
+			flex: 1 0 auto;
 
 		}
 	}
 
 	.overlay-button {
 		margin-top: 2em;
+	}
+}
+@media only screen and (min-width : 60em) {
+	.work-item {
+		position: relative;
+		margin: 0 2em;
+
+		&-image {
+			height: 27em;
+		}
+
+		&-overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0 auto;
+			color: #fff;
+			background-color: rgba(0,0,0,.9);
+			transition: .7s ease all;
+			opacity: 0;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			.overlay-title {
+				margin: 2em 1em;
+
+				h1 {
+					margin: 0;
+				}
+			}
+
+			.overlay-blurb {
+				margin: 0 1em;
+			}
+
+			.overlay-button {
+				border-color: #fff;
+				margin: 2em auto;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.all-work-button {
+		margin: 2em auto;
+	}
+
+	.main-button {
+		// margin: 2em auto;
+		position: relative;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-transition: color .5s;
+		transition: color .5s;
+
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: $precision-green;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transform-origin: 0 50%;
+			transform-origin: 0 50%;
+			-webkit-transition-property: transform;
+			transition-property: transform;
+			-webkit-transition: .5s ease-out;
+			transition: .5s ease-out;
+		}
+
+		&:hover:before {
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+
+		a {
+			transition: .5s ease all;
+		}
+
+		&:hover a{
+			color:#fff;
+		}
 	}
 }

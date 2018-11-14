@@ -29,3 +29,34 @@
 		}
 	}
 }
+
+@media only screen and (min-width : 40em) {
+	.banner {
+		justify-content: flex-start;
+		padding: 0 5em;
+
+		.banner-inner {
+
+			h1 {
+				text-align: left;
+			}
+
+			.banner-logo {
+				max-width: 22em;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 60em) {
+	.banner {
+		padding: 0 10em;
+	}
+}
+
+@media only screen and (min-width : 80em) {
+	.banner {
+		padding: 0 18em;
+	}
+}

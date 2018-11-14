@@ -38,3 +38,22 @@
 		}
 	}
 }
+
+@media only screen and (min-width : 40em) {
+	.service-item {
+		&-content {
+			p {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 60em) { 
+	.service-item {
+
+		&-image {
+			width: 45%;
+		}
+	}
+}
