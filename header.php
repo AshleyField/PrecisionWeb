@@ -8,6 +8,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/minified/lightbox.min.css">
+
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/style.css">
 </head>
 <body>
