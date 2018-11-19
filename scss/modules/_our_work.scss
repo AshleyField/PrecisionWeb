@@ -105,10 +105,21 @@
 			flex-wrap: wrap;
 
 			.work-single-gallery-item {
-				flex: 0 0 45%;
+				box-sizing: border-box;
+				padding: .5em;
+				flex: 0 0 50%;
 				align-self: center;
-				padding: 1em;
 				align-self: center;
+				margin: 0;
+
+				&:nth-child(odd) {
+					padding-right: .25em;
+
+				}
+
+				&:nth-child(even){
+					padding-left: .25em;
+				}
 
 				img {
 					width: 100%;
@@ -239,6 +250,7 @@
 
 			.work-single-gallery-item {
 				flex: 0 0 30%;
+				padding: 1em !important;
 			}
 		}
 	}
