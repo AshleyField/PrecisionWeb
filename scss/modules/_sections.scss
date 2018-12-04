@@ -21,6 +21,11 @@ section {
 	}
 }
 
+.section-content {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
 #services {
 	background-color: rgba(0,0,0,0.03);
 }
@@ -62,6 +67,10 @@ section {
 			align-self: center;
 		}
 	}
+
+	.section-content {
+		margin-bottom: 3em;
+	}
 }
 @media only screen and (min-width : 60em) {
 	.col-3-item {
@@ -79,6 +88,16 @@ section {
 	.col-4-container {
 		.col-4-item {
 			flex: 0 0 23%;
+		}
+	}
+
+	.section-content {
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 4em;
+
+		p {
+			font-size: 1.25em;
 		}
 	}
 }

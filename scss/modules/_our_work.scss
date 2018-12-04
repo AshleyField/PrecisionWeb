@@ -103,6 +103,7 @@
 		.work-gallery {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: center;
 
 			.work-single-gallery-item {
 				box-sizing: border-box;

@@ -41,6 +41,19 @@
 		);
 		register_post_type('clients',$arg);
 
+		//register team
+		$arg = array(
+			'labels' => array(
+				'name'=> 'Team',
+				'singular_name' => 'Team',
+				'menu_name' => 'Team'
+			),
+			'public' => true,
+			'show_in_nav_menues' => true,
+			'menu_icon'   => 'dashicons-universal-access',
+		);
+		register_post_type('team',$arg);
+
 
 
 	}

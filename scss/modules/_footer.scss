@@ -52,6 +52,12 @@ footer {
 					color: #fff;
 				}
 			}
+
+			#github-link {
+				i {
+					margin-right: .5em;
+				}
+			}
 		}
 	}
 
@@ -118,9 +124,21 @@ footer {
 				flex: 1 0 45%;
 				align-self: center;
 
-				li {
-					text-align: left;
+				ul {
+					li {
+						text-align: left;
+
+						a {
+							transition: .5s ease all;
+
+							&:hover {
+								color: $precision-green;
+							}
+						}
+					}
 				}
+
+				
 			}
 
 			.footer-copy {

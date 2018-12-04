@@ -10,7 +10,7 @@
 					<a href="">
 						<i class="fab fa-instagram"></i>
 					</a>
-					<a href="">
+					<a href="mailto:hello@precisionweb.co.nz">
 						<i class="far fa-envelope"></i>
 					</a>
 				</div>
@@ -20,22 +20,25 @@
 				<div class="footer-nav">
 					<ul>
 						<li>
-							<a href="">Home</a>
+							<a href="/">Home</a>
 						</li>
 						<li>
-							<a href="">About</a>
+							<a href="/about">About</a>
 						</li>
 						<li>
-							<a href="">Our Work</a>
+							<a href="/our-work">Our Work</a>
 						</li>
 						<li>
-							<a href="">Team</a>
+							<a href="/team">Team</a>
 						</li>
 						<li>
-							<a href="">Services</a>
+							<a href="/services">Services</a>
 						</li>
 						<li>
-							<a href="">Contact</a>
+							<a href="/contact">Contact</a>
+						</li>
+						<li id="github-link">
+							<a href="https://github.com/AshleyField" target="_blank"><i class="fab fa-github-square"></i>Github</a>
 						</li>
 					</ul>
 				</div>

@@ -42,6 +42,8 @@
 			</div>
 			<div class="col-3-container">
 				<?php
+
+					$counter = 0;
 					// The Query
 
 					$args = array('post_type'=>'work');
@@ -51,8 +53,11 @@
 
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
-						
-						get_template_part('content','work');
+
+						if($counter <= 2){
+							get_template_part('content','work');
+							$counter ++;
+						}
 					}
 
 					/* Restore original Post Data */

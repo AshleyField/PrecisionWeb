@@ -1,4 +1,10 @@
-<div class="single-banner" style="background-image: url('<?php the_field('single_banner_image'); ?>');"></div>
+<?php
+
+if(get_field('single_banner_image')){ ?>
+	<div class="single-banner" style="background-image: url('<?php the_field('single_banner_image'); ?>');"></div>
+<?php } ?>
+
+
 
 <div class="work-single-wrapper">
 	<section id="work-single">
